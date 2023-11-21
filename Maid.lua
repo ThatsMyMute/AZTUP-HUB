@@ -4,7 +4,7 @@ SX_VM_CNONE();
 -- @classmod Maid
 -- @see Signal
 
-local Signal = sharedRequire('./Signal.lua');
+local Signal = sharedRequire('https://raw.githubusercontent.com/ThatsMyMute/AZTUP-HUB/main/signal.lua');
 local tableStr = getServerConstant('table');
 local classNameStr = getServerConstant('Maid');
 local funcStr = getServerConstant('function');
