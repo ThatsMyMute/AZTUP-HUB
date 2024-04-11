@@ -1,8 +1,9 @@
 SX_VM_CNONE();
 
-local Services = sharedRequire('./Services.lua');
-local library = sharedRequire('../UILibrary.lua');
-local Signal = sharedRequire('./Signal.lua');
+local Services = loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatsMyMute/AZTUP-HUB/main/Services.lua"));
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ThatsMyMute/AZTUP-HUB/main/UILibrary.lua"));
+
+local Signal = loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatsMyMute/AZTUP-HUB/main/signal.lua'))();
 
 local Players, UserInputService, HttpService, CollectionService = Services:Get('Players', 'UserInputService', 'HttpService', 'CollectionService');
 local LocalPlayer = Players.LocalPlayer;
